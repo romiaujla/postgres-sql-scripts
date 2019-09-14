@@ -11,6 +11,7 @@ create table if not exists bookmarks_table
         rating numeric not null constraint rating_limit check (rating >= 0 and rating <= 5)
     );
 
+-- Add rows to the created table
 insert into bookmarks_table
     (title, url, description, rating)
     values
@@ -25,4 +26,8 @@ insert into bookmarks_table
     ('instagram', 'https://www.instagram.com', 'Social media app', 2.0),
     ('youtube', 'https://www.youtube.com', 'Find any kind of videos', 4.1);
 
+-- View all the rows and columns of the table. 
 select * from bookmarks_table;
+
+-- Path to run the file:
+-- /i /Users/ramanpreet/github/postgres-sql-thinkful/postgres-sql-scripts/bookmarkdb.sql
