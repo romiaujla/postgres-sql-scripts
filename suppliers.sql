@@ -17,5 +17,6 @@ CREATE TABLE item(
     item_name TEXT NOT NULL,
     unit TEXT,
     unit_cost NUMERIC, 
+    supplier INTEGER REFRENCES supplier(id) NOT NULL
 );
 
